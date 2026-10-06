@@ -1,21 +1,19 @@
 # Shape Management System
 
-A Java application developed as part of the Object-Oriented Programming module at the University of York.
-
-The project demonstrates core object-oriented programming principles through a system for creating and managing geometric shapes.
+A Java application for creating and managing geometric shapes, developed to demonstrate core object-oriented programming principles.
 
 ## Features
 
-- Supports circles, rectangles, squares and triangles
-- Calculates area and perimeter for different shapes
-- Translates shapes using coordinate positions
-- Scales shapes
-- Manages multiple shapes through a central ShapeList
-- Uses an abstract Shape superclass with specialised subclasses
+- Create and manage circles, rectangles, squares and triangles
+- Calculate the area and perimeter of different shapes
+- Translate shapes using coordinate positions
+- Scale shapes
+- Manage multiple shapes using `ArrayList`
+- Apply shape-specific behaviour through subclasses
 
 ## Object-Oriented Design
 
-The project applies:
+The project demonstrates:
 
 - Abstraction
 - Inheritance
@@ -23,7 +21,18 @@ The project applies:
 - Polymorphism
 - Method overriding
 
-`Shape` provides the common abstraction for geometric objects, while classes such as `Circle`, `Rectangle`, `Square` and `Triangle` implement shape-specific behaviour.
+An abstract `Shape` class defines common properties and behaviours, while individual shape classes implement their own calculations and operations.
+
+## Project Structure
+
+- `Shape.java` - Abstract base class
+- `Coordinates.java` - Coordinate representation
+- `Circle.java` - Circle implementation
+- `Rectangle.java` - Rectangle implementation
+- `Square.java` - Square implementation
+- `Triangle.java` - Triangle implementation
+- `ShapeList.java` - Manages collections of shapes
+- `Main.java` - Application entry point
 
 ## Technologies
 
@@ -32,17 +41,6 @@ The project applies:
 - ArrayList
 - UML-based class design
 
-## Project Structure
-
-- `Shape.java` – abstract base class
-- `Coordinates.java` – coordinate representation and transformations
-- `Circle.java` – circle implementation
-- `Rectangle.java` – rectangle implementation
-- `Square.java` – square implementation
-- `Triangle.java` – triangle implementation
-- `ShapeList.java` – manages collections of shapes
-- `Main.java` – application entry point
-
 ## What I Learned
 
-This project helped me develop a stronger understanding of designing Java applications using object-oriented principles, organising related classes, and implementing shared and specialised behaviour through inheritance and polymorphism.
+This project strengthened my understanding of object-oriented software design, particularly the use of abstraction, inheritance and polymorphism to organise related classes and reduce duplicated functionality.
